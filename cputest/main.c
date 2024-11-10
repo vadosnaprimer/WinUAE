@@ -4159,7 +4159,7 @@ int main(int argc, char *argv[])
 				continue;
 			if (dname[0] == '.')
 				continue;
-			if (strnicmp(cpustr, dname, strlen(cpustr)))
+			if (_strnicmp(cpustr, dname, strlen(cpustr)))
 				continue;
 			sprintf(pathptr, "%s/", dname);		
 			strcpy(group, dname + strlen(cpustr));
@@ -4271,7 +4271,7 @@ int main(int argc, char *argv[])
 			} else {
 				for (int i = first; i < diroff; i += MAX_FILE_LEN) {
 					char *name = dirs + i;
-					if (!strnicmp(name, opcode, strlen(opcode) - 1)) {
+					if (!_strnicmp(name, opcode, strlen(opcode) - 1)) {
 						if (test_mnemo(name)) {
 							if (stop_on_error)
 								break;

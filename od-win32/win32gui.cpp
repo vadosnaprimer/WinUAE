@@ -125,6 +125,8 @@
 
 #define SOUND_BUFFER_MULTIPLIER 1024
 
+#define DWMWA_USE_IMMERSIVE_DARK_MODE 20
+
 static wstring szNone;
 
 static int allow_quit;

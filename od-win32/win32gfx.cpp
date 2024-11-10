@@ -84,6 +84,8 @@
 #define SM_FULLWINDOW 7
 #define SM_NONE 11
 
+#define DWMWA_USE_IMMERSIVE_DARK_MODE 20
+
 static int deskhz;
 
 struct MultiDisplay Displays[MAX_DISPLAYS + 1];
